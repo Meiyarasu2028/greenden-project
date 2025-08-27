@@ -23,7 +23,7 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -45,6 +45,29 @@
         </ul>
     </nav>
 
+    <!-- side navbar -->
+
+    <section id="sidenav" class="bg-green-100 z-20 fixed top-0 text-center transition-all duration-500" style="width: 50%; height: 100vh; right: -50%;" >
+
+        <div class="text-right p-6">
+           <p id="closenav" class="cursor-pointer"><i class="fa-solid fa-xmark"></i></p> 
+        </div>
+        <ul class="flex text-gray-600 gap-10 flex-col md:flex mt-10">
+
+            <li class="hover:underline hover:text-black">
+                <a href="./index.html"><i class="fa-solid fa-house-user"></i> Home</a>
+            </li>
+
+            <li class="hover:underline hover:text-black">
+                <a href="./product.html"><i class="fa-solid fa-cart-shopping"></i> Products</a>
+            </li>
+
+            <li class="hover:underline hover:text-black">
+                <a href="./contact.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- producut page -->
 
     <section class="text-center p-4 bg-gray-50">
@@ -57,18 +80,18 @@
         <div class="flex justify-center mt-5">
             <div class="flex items-center border border-black w-3/4 rounded-3xl px-3">
                 <i class="fa-solid fa-magnifying-glass mr-2"></i>
-                <input type="search" class="flex-1 p-1 rounded-3xl outline-none" placeholder="Search...">
+                <input id="search" type="search" class="flex-1 p-1 rounded-3xl outline-none" placeholder="Search...">
             </div>
         </div>
 
         <!-- prodect items -->
 
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-5">
+        <div id="prodect-container" class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-5">
             <div>
                 <img src="./images/plant (5).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Peace Lily</h2>
                 <p>$20</p>
             </div>
 
@@ -76,7 +99,7 @@
                 <img src="./images/plant (2).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>ZZ Plant</h2>
                 <p>$20</p>
             </div>
 
@@ -84,7 +107,7 @@
                 <img src="./images/plant (3).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Aloe Vera</h2>
                 <p>$20</p>
             </div>
 
@@ -92,7 +115,7 @@
                 <img src="./images/plant (4).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Areca Palm</h2>
                 <p>$20</p>
             </div>
 
@@ -100,7 +123,7 @@
                 <img src="./images/plant (6).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Rubber Plant</h2>
                 <p>$20</p>
             </div>
 
@@ -108,7 +131,7 @@
                 <img src="./images/plant (7).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Boston Fern</h2>
                 <p>$20</p>
             </div>
 
@@ -116,7 +139,7 @@
                 <img src="./images/plant (8).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Chinese Evergreen</h2>
                 <p>$20</p>
             </div>
 
@@ -124,7 +147,7 @@
                 <img src="./images/plant (9).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Fiddle Leaf Fig</h2>
                 <p>$20</p>
             </div>
 
@@ -132,7 +155,7 @@
                 <img src="./product.image/product (1).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Jade Plant</h2>
                 <p>$20</p>
             </div>
 
@@ -140,7 +163,7 @@
                 <img src="./product.image/product (2).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Lucky Bamboo</h2>
                 <p>$20</p>
             </div>
 
@@ -148,7 +171,7 @@
                 <img src="./product.image/product (3).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Spider Plant</h2>
                 <p>$20</p>
             </div>
 
@@ -156,7 +179,7 @@
                 <img src="./product.image/product (4).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Bird’s Nest Fern</h2>
                 <p>$20</p>
             </div>
 
@@ -164,7 +187,7 @@
                 <img src="./product.image/product (5).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Calathea</h2>
                 <p>$20</p>
             </div>
 
@@ -172,7 +195,7 @@
                 <img src="./product.image/product (6).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Philodendron</h2>
                 <p>$20</p>
             </div>
 
@@ -180,7 +203,7 @@
                 <img src="./product.image/product (7).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Croton</h2>
                 <p>$20</p>
             </div>
 
@@ -188,7 +211,7 @@
                 <img src="./product.image/product (8).jpg" alt="best seller"
                     class=" inline object-cover hover:shadow-xl transform hover:-translate-y-1"
                     style="width: 150px; height: 200px;">
-                <h2>plant</h2>
+                <h2>Snake Plant</h2>
                 <p>$20</p>
             </div>
 
@@ -197,7 +220,7 @@
                 <img src="./images/plant (11).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Dieffenbachia</h2>
                 <p>$20</p>
             </div>
 
@@ -206,7 +229,7 @@
                 <img src="./images/plant (12).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Dracaena</h2>
                 <p>$20</p>
             </div>
 
@@ -216,7 +239,7 @@
                 <img src="./images/plant (12).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Anthurium</h2>
                 <p>$20</p>
             </div>
 
@@ -226,7 +249,7 @@
                 <img src="./images/plant (13).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Swiss Cheese</h2>
                 <p>$20</p>
             </div>
 
@@ -235,7 +258,7 @@
                 <img src="./images/plant (14).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Schefflera</h2>
                 <p>$20</p>
             </div>
 
@@ -244,7 +267,7 @@
                 <img src="./images/plant (30).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Parlor Palm</h2>
                 <p>$20</p>
             </div>
 
@@ -253,7 +276,7 @@
                 <img src="./images/plant (16).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Kalanchoe</h2>
                 <p>$20</p>
             </div>
 
@@ -262,7 +285,7 @@
                 <img src="./images/plant (17).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Ponytail Palm</h2>
                 <p>$20</p>
             </div>
 
@@ -270,7 +293,7 @@
                 <img src="./images/plant (18).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Oxalis</h2>
                 <p>$20</p>
             </div>
 
@@ -278,7 +301,7 @@
                 <img src="./images/plant (19).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Hoya</h2>
                 <p>$20</p>
             </div>
 
@@ -286,7 +309,7 @@
                 <img src="./images/plant (20).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Begonia</h2>
                 <p>$20</p>
             </div>
 
@@ -295,7 +318,7 @@
                 <img src="./images/plant (21).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Peperomia</h2>
                 <p>$20</p>
             </div>
 
@@ -304,7 +327,7 @@
                 <img src="./images/plant (22).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Cactus</h2>
                 <p>$20</p>
             </div>
 
@@ -312,7 +335,7 @@
                 <img src="./images/plant (23).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Lithops</h2>
                 <p>$20</p>
             </div>
 
@@ -320,7 +343,7 @@
                 <img src="./images/plant (24).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Fittonia</h2>
                 <p>$20</p>
             </div>
 
@@ -328,7 +351,7 @@
                 <img src="./images/plant (25).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Coffee Plant</h2>
                 <p>$20</p>
             </div>
 
@@ -336,7 +359,7 @@
                 <img src="./images/plant (26).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Hoya</h2>
                 <p>$20</p>
             </div>
 
@@ -344,7 +367,7 @@
                 <img src="./images/plant (27).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Air Plant</h2>
                 <p>$20</p>
             </div>
 
@@ -352,7 +375,7 @@
                 <img src="./images/plant (28).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>English Ivy</h2>
                 <p>$20</p>
             </div>
 
@@ -360,7 +383,7 @@
                 <img src="./images/plant (29).jpg" alt="best seller"
                     class=" inline hover:shadow-xl transform hover:-translate-y-1 object-cover"
                     style="width: 150px; height: 200px ;">
-                <h2>plant</h2>
+                <h2>Strawberry Begonia</h2>
                 <p>$20</p>
             </div>
         </div>
@@ -387,6 +410,9 @@
 
     </section>
 
+
+    <script src="./product.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
