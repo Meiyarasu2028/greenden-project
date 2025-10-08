@@ -1,5 +1,5 @@
 
-var prodectcontainer = document.getElementById("prodect-container")
+var prodectcontainer = document.getElementById("prodectcontainer")
 var search = document.getElementById("search")
 var prodectlist = prodectcontainer.querySelectorAll("div")
 
